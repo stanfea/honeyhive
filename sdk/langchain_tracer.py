@@ -260,6 +260,18 @@ class HoneyHiveLangChainTracer(BaseTracer, ABC):
                 "top_p": "top_p",
                 "stop_sequence": "stop",
             }
+        elif llm_type.startswith("google-palm"):
+            provider = "google-palm"
+            mapping = {
+                "model_name": "model",
+                "temperature": "temperature",
+                "max_tokens": "max_tokens",
+                "n": "num_samples",
+                "top_p": "top_p",
+                "presence_penalty": "presence_penalty",
+                "frequency_penalty": "frequency_penalty",
+                "stop": "stop",
+            }
         else:
             raise NotImplementedError
 
