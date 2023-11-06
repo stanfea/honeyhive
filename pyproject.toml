@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "honeyhive"
+version = "0.1.57"
+description = "The HoneyHive SDK for Python"
+license = "Apache-2.0"
+authors = ["support@honeyhive.ai"]
+homepage = "https://honeyhive.ai/"
+repository = "https://github.com/stanfea/honeyhive"
